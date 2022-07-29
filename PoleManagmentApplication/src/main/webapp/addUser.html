@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add User</title>
+</head>
+<body>
+	<h1>User Registration:</h1>
+	<form method="post" action="addServlet">
+		<table>
+			<tr>
+				<td>Name:</td>
+				<td><input name="name" /></td>
+			</tr>
+			<tr>
+				<td>Email Id :</td>
+				<td><input name="emailId" /></td>
+			</tr>
+			<tr>
+				<td>Phone Number :</td>
+				<td><input name="phoneNumber" /></td>
+			</tr>
+			<tr>
+				<td>City:</td>
+				<td><input name="city"/></td>
+			</tr>
+			<tr>
+				<td>Sector:</td>
+				<td><input name="sector" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input name="password" type="password" /></td>
+			</tr>
+			<tr>
+				<td>Choose type of user:</td>
+				<td>
+					<select name="type" id="type">
+					    <option value="Admin">Admin</option>
+					    <option value="User">Consumer</option>
+				  	</select>	
+				</td>
+			</tr>
+			<tr>
+				<td />
+				<td><input type="submit" value="SignUp" /></td>
+		</table>
+	</form>
+	<hr>
+	<h1>User LogIn:</h1>
+	<form method="post" action="loginServlet">
+		<table>
+			<tr>
+				<td>Phone Number:</td>
+				<td><input name="number" /></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input name="password" type="password" /></td>
+			</tr>
+			<tr>
+				<td>Choose type of user</td>
+				<td>
+					<select name="type" id="type">
+					    <option value="Admin">Admin</option>
+					    <option value="User">Consumer</option>
+				  	</select>	
+				</td>
+			</tr>
+			<tr>
+				<td />
+				<td><input type="submit" value="Log In" /></td>
+		</table>
+	</form>
+</body>
+</html>
